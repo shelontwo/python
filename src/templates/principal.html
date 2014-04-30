@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Eita teste lindo </TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.3.2 (Linux)">
+	<META NAME="CREATED" CONTENT="20140430;112243852068074">
+	<META NAME="CHANGED" CONTENT="20140430;113011077190505">
+</HEAD>
+<BODY LANG="pt-BR" DIR="LTR">
+
+<P>{{STATIC_URL}}</P>
+<P>{{BASE_DIR}}</P>
+<P>{{subscription.name}}</P>
+<P>{{subscription.created_at|date:"d/m/Y"}} </P>
+<P>{% if subscription.phone %}</P>
+<P>    Telefone: {{subscription.phone}}.</P>
+<P>{% else %}</P>
+<P>  e-mail: {{subscription.email}}.</P>
+<P>{% endif %}</P>
+<P><BR><BR>
+</P>
+
+</BODY>
+</HTML>
